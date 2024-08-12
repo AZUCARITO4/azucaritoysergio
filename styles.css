@@ -1,0 +1,209 @@
+/* Estilos Globales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #e6e6e6;
+}
+
+/* Estilo del Header */
+header {
+    background-color: #111;
+    color: #ffd700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 2px solid #ffd700;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #fff;
+}
+
+/* Estilo de la sección Hero */
+.hero {
+    background-color: #111;
+    background-image: url('https://www.vectorstock.com/royalty-free-vector/abstract-black-gold-and-white-luxury-background-vector-44837454');
+    background-size: cover;
+    background-position: center;
+    color: #ffd700;
+    text-align: center;
+    padding: 150px 20px;
+    position: relative;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-text {
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero-text h2 {
+    font-size: 48px;
+    margin: 0 0 20px;
+    letter-spacing: 2px;
+}
+
+.hero-text p {
+    font-size: 20px;
+    margin: 0 0 30px;
+}
+
+.hero-text .btn {
+    background-color: #ffd700;
+    color: #111;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero-text .btn:hover {
+    background-color: #fff;
+    color: #111;
+}
+
+/* Estilos de la Sección About */
+.about {
+    background-color: #111;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ffd700;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+/* Estilos de la Sección Services */
+.services {
+    background-color: #000;
+    padding: 60px 20px;
+}
+
+.services h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ffd700;
+}
+
+.service-item {
+    background-color: #111;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+    color: #e6e6e6;
+}
+
+.service-item h3 {
+    font-size: 24px;
+    margin-top: 0;
+    color: #ffd700;
+}
+
+/* Estilos de la Sección Contact */
+.contact {
+    background-color: #111;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ffd700;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact form label {
+    display: block;
+    margin-bottom: 10px;
+    text-align: left;
+    color: #e6e6e6;
+}
+
+.contact form input, .contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #ffd700;
+    background-color: #000;
+    color: #e6e6e6;
+}
+
+.contact form button {
+    background-color: #ffd700;
+    color: #111;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact form button:hover {
+    background-color: #fff;
+    color: #111;
+}
+
+/* Estilos del Footer */
+footer {
+    background-color: #111;
+    color: #ffd700;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+    border-top: 2px solid #ffd700;
+}
